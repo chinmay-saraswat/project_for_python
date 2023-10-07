@@ -1,0 +1,69 @@
+#  PLURIZER project 2 ---->>>>   code Project 2 from CHINMAY SARASWAT Rej. no. 226301072 submited to Mr. Namit Khanduja sir
+# Converting singular noun into Plural
+# Taking two input first one is non-negative integer and other one is string
+# Here 1 is default case i.e., noun will not change if the input number is 1  
+try:
+    # Input Integer
+    num_int = int(input("Enter the counting of your noun : "))
+except:
+    print("You entered a letter here, so please re-run the program")
+    exit(0)
+# Here we inputting the singular noun
+noun = input("Enter the noun which you want to convert into plural : ")
+if num_int == 1:
+    # Default case for 1, singular noun remains the same
+    print(f"This is the default case for 1: {num_int} {noun}")
+else:
+    # Check different conditions for forming plurals based on the ending of the noun
+    # Check if the noun ends with 'fe'
+    if noun[-2:] == 'fe':
+        print(f"Plural of singular noun {noun} is {num_int} {noun[0:-2]+'ves'}")
+    # Check if the noun ends with 'y' and the letter before 'y' is not one of 'u', 'o', 'e', 'a'
+    elif noun[-1] == 'y' and noun[-2] not in ['u', 'o', 'e', 'a']:
+        print(f"Plural of singular noun {noun} is {num_int} {noun[:-1]+'ies'}")
+    # Check if the noun ends with 'sh' or 'ch'
+    elif noun[-2:] == 'sh' or noun[-2:] == 'ch':
+        print(f"Plural of singular noun {noun} is {num_int} {noun +'es'}")
+    # Check if the noun ends with 'us'
+    elif noun[-2:] == 'us':
+        print(f"Plural of singular noun {noun} is {num_int} {noun[:-2]+'i'}")
+    # Check if the noun ends with 'ay', 'oy', 'ey', or 'uy'
+    elif noun[-2:] == 'ay' or noun[-2:] =='oy' or noun[-2:] =='ey' or noun[-2:] =='uy':
+        print(f"Plural of singular noun {noun} is {num_int} {noun + 's'}")
+    # For all other cases, just add 's' to form the plural
+    else:
+        print(f"Plural of singular noun {noun} is {num_int} {noun + 's'}")
+# Converting singular noun into Plural
+# Taking two input first one is non-negative integer and other one is string
+# Here 1 is default case i.e., noun will not change if the input number is 1  
+try:
+    # Input Integer
+    num_int = int(input("Enter the counting of your noun : "))
+except:
+    print("You entered a letter here, so please re-run the program")
+    exit(0)
+# Here we inputting the singular noun
+noun = input("Enter the noun which you want to convert into plural : ")
+if num_int == 1:
+    # Default case for 1, singular noun remains the same
+    print(f"This is the default case for 1: {num_int} {noun}")
+else:
+    # Check different conditions for forming plurals based on the ending of the noun
+    # Check if the noun ends with 'fe'
+    if noun[-2:] == 'fe':
+        print(f"Plural of singular noun {noun} is {num_int} {noun[0:-2]+'ves'}")
+    # Check if the noun ends with 'y' and the letter before 'y' is not one of 'u', 'o', 'e', 'a'
+    elif noun[-1] == 'y' and noun[-2] not in ['u', 'o', 'e', 'a']:
+        print(f"Plural of singular noun {noun} is {num_int} {noun[:-1]+'ies'}")
+    # Check if the noun ends with 'sh' or 'ch'
+    elif noun[-2:] == 'sh' or noun[-2:] == 'ch':
+        print(f"Plural of singular noun {noun} is {num_int} {noun +'es'}")
+    # Check if the noun ends with 'us'
+    elif noun[-2:] == 'us':
+        print(f"Plural of singular noun {noun} is {num_int} {noun[:-2]+'i'}")
+    # Check if the noun ends with 'ay', 'oy', 'ey', or 'uy'
+    elif noun[-2:] == 'ay' or noun[-2:] =='oy' or noun[-2:] =='ey' or noun[-2:] =='uy':
+        print(f"Plural of singular noun {noun} is {num_int} {noun + 's'}")
+    # For all other cases, just add 's' to form the plural
+    else:
+        print(f"Plural of singular noun {noun} is {num_int} {noun + 's'}")
